@@ -4,11 +4,93 @@
   font-size: 45px;
   padding: 10px;
   border-radius: 5px;
+  max-width: 100%;
+  width: auto;
 }
 .menu-tile {
   color: black;
   background-color: transparent;
   font-size: 64px;
+  font-weight: bold;
   padding: 10px;
   border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
+.big-explainer {
+  color: black;
+  background-color: transparent;
+  font-size: 64px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
+.small-explainer {
+  color: black;
+  background-color: transparent;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
+.button-big {
+  color: white;
+  background-color: black;
+  font-size: 24px;
+  padding: 20px 32px;
+  border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
+.button-small1 {
+  color: black;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  max-width: 100%;
+  width: auto;
+}
+.button-small2 {
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
+.normal-text {
+  color: black;
+  background-color: transparent;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
+.skills-stuff {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    height: 20vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.menu-small-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    height: 20vh;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 48px; 
 }
