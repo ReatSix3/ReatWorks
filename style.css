@@ -1,0 +1,14 @@
+.title {
+  color: black;
+  background-color: transparent;
+  font-size: 45px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.menu-tile {
+  color: black;
+  background-color: transparent;
+  font-size: 64px;
+  padding: 10px;
+  border-radius: 5px;
+}
