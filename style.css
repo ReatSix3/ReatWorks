@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6, button {
 }
 .button-small1 {
   color: black;
+  border: none;              /* No default border */
   background-color: transparent;
   font-size: 20px;
   font-weight: bold;
@@ -48,6 +49,7 @@ h1, h2, h3, h4, h5, h6, button {
 }
 .button-small2 {
   color: white;
+  border: none;              /* No default border */
   background-color: black;
   font-size: 16px;
   font-weight: bold;
@@ -96,16 +98,44 @@ h1, h2, h3, h4, h5, h6, button {
 }
 .skills-wrapper {
   display: flex;
-  justify-content: space-between;
   margin-top: 27%;
-  align-items: center;
-  padding: 0 15% /* 👈 You control the spacing */
 }
 .skills-stuff1, .skills-stuff2, .skills-stuff3{
   flex: 1;
   text-align: center;
 }
+.contact-wrapper {
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between; /* Push left & right */
+  align-items: center;
+  padding: 0 22.5vw; /* Adjust spacing from left/right edge */
+}
 
+.contact-wrapper1 {
+  text-align: left;
+  flex: 0 0 auto; /* prevent from stretching */
+}
+
+.contact-wrapper2 {
+  text-align: right;
+  flex: 0 0 auto; /* prevent from stretching */
+}
+.space-wrapper {
+  margin-top: 30%;
+  text-align: right;
+  flex: 0 0 auto; /* prevent from stretching */
+}
+.space{
+  color: black;
+  background-color: transparent;
+  font-size: 64px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
 .big-explainer1 {
   color: black;
   background-color: transparent;
@@ -140,6 +170,7 @@ h1, h2, h3, h4, h5, h6, button {
   color: white;
   background-color: black;
   font-size: 24px;
+  border: none;              /* No default border */
   padding: 20px 32px;
   border-radius: 5px;
   max-width: 100%;
