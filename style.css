@@ -70,8 +70,8 @@ h1, h2, h3, h4, h5, h6, button {
   border: none;
   background: url('Images/music_muted.png') no-repeat center center;
   background-size: cover;
-  width: auto;
-  height: auto;
+  height: 5.5vh; /* or whatever value you want */
+  width: calc(5.5vh * 0.6702); /* maintain aspect ratio */
 }
 
 .button-sound.sound-off {

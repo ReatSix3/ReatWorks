@@ -2,6 +2,7 @@ function toggleSound() {
   const btn = document.getElementById("soundButton");
   const audio = document.getElementById("bgMusic");
   audio.play()
+  audio.loop = true;
 
   if (btn.classList.contains("sound-on")) {
     btn.classList.remove("sound-on");
