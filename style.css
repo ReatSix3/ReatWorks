@@ -1,72 +1,71 @@
-body, html {
-  overflow: auto; /* or unset / initial */
-}
-/* default setting */
+/* style */
 h1, h2, h3, h4, h5, h6, button {
   font-size: 24px;     /* Or any size you want */
   font-family: Inter;  /* Optional, if you want same font too */
   font-weight: normal; /* Optional, if you want to remove bold */
 }
-/* style */
-.title {
-  color: black;
-  background-color: transparent;
-  font-size: 45px;
-  padding: 0px;
-  border-radius: 5px;
-  max-width: 100%;
-  width: auto;
-  font-weight: normal;
-}
-.title-container {
-  left: 3.75%;
-  top: 0%;
-  text-align: left;
-  margin-left: 3.5%;
-  margin-right: 50%;
-}
-.menu-small-button{
-  display: flex;
-  justify-content: center;
-  align-items:  center;
-  height: 20vh;
-  padding: 20px;
-  box-sizing: border-box;
-  gap: 48px;
-  top: 0%;
-  right: 6%; 
-}
-.button-small1 {
-  color: black;
-  border: none;              /* No default border */
-  background-color: transparent;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  border: none;
-  max-width: 100%;
-  width: auto;
-}
-.button-small2 {
-  color: white;
-  border: none;              /* No default border */
-  background-color: black;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 5px;
-  max-width: 100%;
-  width: auto;
-}
-.menu-bar-wrapper{
+.menu-bar-wrapper {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 11vh;
+  background-color: rgba(255, 255, 255, 0.89);
   display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  backdrop-filter: blur(10px);        /* 💡 Adds blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  box-sizing: border-box;
 }
-.menu-tile {
+
+/* Left Title */
+.title-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4vw;
+}
+
+/* Right Contacts Button */
+.menu-right {
+  flex: 1;
+  gap: 2vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+
+/* Title Text */
+.title {
+  color: black;
+  background-color: transparent;
+  font-size: clamp(16px, 2vw, 32px);
+  padding: 0;
+}
+
+/* Home & Projects Buttons */
+.button-small1 {
+  color: black;
+  background-color: transparent;
+  font-size: clamp(10px, 1vw, 18px);
+  font-weight: bold;
+  border-radius: 0.5vw;
+  border: none;
+  padding: 0.5vh 1vw;
+}
+
+/* Contacts Button */
+.button-small2 {
+  color: white;
+  background-color: black;
+  font-size: clamp(10px, 1vw, 18px);
+  font-weight: bold;
+  padding: 1vh 1.5vw;
+  border-radius: 0.5vw;
+  border: none;
+}
+.title2 {
   color: black;
   background-color: transparent;
   font-size: 64px;
@@ -76,47 +75,62 @@ h1, h2, h3, h4, h5, h6, button {
   max-width: 100%;
   width: auto;
 }
-.menu-project-container{
-  margin-top: 15%;
-  margin-left: 2.5%;
+.title-container2{
+  margin-top: 14.5%;
+  margin-left: 4.5%;
   text-align: left;
   margin-bottom: 0;
 }
-.menu-explain-container{
-  margin-bottom: 5%;
-  margin-left: 3%;
+.title-explain-container{
+  margin-left: 5vw;
   text-align: left;
 }
 .project-button-container{
-  margin-top: 5%;
-  margin-left: 3%;
+  margin-top: 5.5vh;
+  margin-left: 5vw;
   text-align: left;
 }
-.skills-menu-container{
-  margin-top: 16%;
+.skills-text-container{
+  margin-top: 22.8%;
   text-align: center;
 }
 .skills-wrapper {
   display: flex;
-  margin-top: 27%;
+  justify-content: center; /* Center the group horizontally */
+  align-items: center;
+  text-align: center;
+  margin-top: 7.5%;
+  gap: 6vw;
 }
 .skills-stuff1, .skills-stuff2, .skills-stuff3{
-  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+.skills-stuff1 img { /* AI */
+  width: 15vw;
+  height: auto;
+}
+.skills-stuff2 img { /* Front */
+  width: 15vw;
+  height: auto;
+}
+.skills-stuff3 img { /* Back */
+  width: 15vw;
+  height: auto;
 }
 .contact-wrapper {
   margin-top: 20%;
   display: flex;
   justify-content: space-between; /* Push left & right */
   align-items: center;
-  padding: 0 22.5vw; /* Adjust spacing from left/right edge */
+  padding: 0 20.5vw; /* Adjust spacing from left/right edge */
 }
-
 .contact-wrapper1 {
   text-align: left;
   flex: 0 0 auto; /* prevent from stretching */
 }
-
 .contact-wrapper2 {
   text-align: right;
   flex: 0 0 auto; /* prevent from stretching */
@@ -166,7 +180,7 @@ h1, h2, h3, h4, h5, h6, button {
   max-width: 100%;
   width: auto;
 }
-.button-big {
+.button-big1 {
   color: white;
   background-color: black;
   font-size: 24px;
@@ -176,7 +190,16 @@ h1, h2, h3, h4, h5, h6, button {
   max-width: 100%;
   width: auto;
 }
-
+.button-big2 {
+  color: white;
+  background-color: black;
+  font-size: 24px;
+  border: none;              /* No default border */
+  padding: 3vh 12vw;
+  border-radius: 5px;
+  max-width: 100%;
+  width: auto;
+}
 .normal-text {
   color: black;
   background-color: transparent;
