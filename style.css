@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, button {
   width: 100vw;
   height: 11vh;
   background-color: rgba(255, 255, 255, 0.89);
+  border-bottom: 0.2vw solid rgb(59, 59, 59);
   display: flex;
   align-items: center;
   padding: 0 2vw;
@@ -65,6 +66,23 @@ h1, h2, h3, h4, h5, h6, button {
   border-radius: 0.5vw;
   border: none;
 }
+.button-sound{
+  border: none;
+  background: url('Images/music_muted.png') no-repeat center center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.button-sound.sound-off {
+  background-image: url('Images/music_muted.png');
+}
+/* When sound is on */
+.button-sound.sound-on {
+  background-image: url('Images/music_unmuted.png');
+}
+/* When sound is off */
+
 .title2 {
   color: black;
   background-color: transparent;
@@ -99,10 +117,10 @@ h1, h2, h3, h4, h5, h6, button {
   justify-content: center; /* Center the group horizontally */
   align-items: center;
   text-align: center;
-  margin-top: 7.5%;
-  gap: 6vw;
+  margin-top: 5.5%;
+  gap: 10vw;
 }
-.skills-stuff1, .skills-stuff2, .skills-stuff3{
+.skills-stuff1, .skills-stuff23{
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -113,10 +131,6 @@ h1, h2, h3, h4, h5, h6, button {
   height: auto;
 }
 .skills-stuff2 img { /* Front */
-  width: 15vw;
-  height: auto;
-}
-.skills-stuff3 img { /* Back */
   width: 15vw;
   height: auto;
 }

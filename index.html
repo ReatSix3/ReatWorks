@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReatWorks</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
+<audio id="bgMusic" src="Sounds/ReatWorksbgm.mp3"></audio>
 <div class="menu-bar-wrapper">
   <div class="title-container">
     <h4 class="title">ReatWorks</h4>
@@ -15,8 +17,8 @@
     <button class="button-small1">Home</button>
     <button class="button-small1">Projects</button>
     <button class="button-small2">Contacts</button>
+  <button id="soundButton" class="button-sound sound-on" onclick="toggleSound()"></button>  </div>
   </div>
-</div>
     <div class="title-container2">
   <h2 class="title2">Home</h2>
   </div>
@@ -32,16 +34,12 @@
   <div class="skills-wrapper">
   <div class="skills-stuff1">
     <img src="Images\datascience_logo.png">
-    <h4 class="small-explainer">AI</h4>
+    <h4 class="small-explainer">AI Engineer</h4>
     </div>
   <div class="skills-stuff2">
     <img src="Images\frontend_logo.png">
-    <h4 class="small-explainer">FrontEnd</h4>
+    <h4 class="small-explainer">Software Engineer</h4>
     </div>  
-  <div class="skills-stuff3">
-    <img src="Images\backend_logo.png">
-    <h4 class="small-explainer">BackEnd</h4>
-  </div>
   </div>
   <div class="contact-wrapper">
     <div class="contact-wrapper1">
