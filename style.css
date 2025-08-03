@@ -133,22 +133,37 @@ h1, h2, h3, h4, h5, h6, button {
 .skills-stuff2 img { /* Front */
   width: 15vw;
   height: auto;
-}
-.contact-wrapper {
+}.contact-wrapper {
   margin-top: 20%;
   display: flex;
-  justify-content: space-between; /* Push left & right */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20.5vw; /* Adjust spacing from left/right edge */
+  padding: 0 20.5vw;
+  gap: 1rem;
 }
-.contact-wrapper1 {
-  text-align: left;
-  flex: 0 0 auto; /* prevent from stretching */
-}
+.contact-wrapper1,
 .contact-wrapper2 {
-  text-align: right;
-  flex: 0 0 auto; /* prevent from stretching */
+  flex: 0 0 auto;
 }
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 0 5vw;
+    text-align: center;
+  }
+
+  .contact-wrapper1,
+  .contact-wrapper2 {
+    text-align: center;
+  }
+
+  .button-big2 {
+    margin-top: 1rem;
+  }
+}
+
 .space-wrapper {
   margin-top: 30%;
   text-align: right;
